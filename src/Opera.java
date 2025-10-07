@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+ class Opera extends MusicalShow {
+     public int choirSize;
 
-public class Opera {
-}
+     public Opera(String title, int duration, Director director, String musicAuthor, String librettoText, int choirSize) {
+         super(title, duration, director, musicAuthor, librettoText);
+         this.choirSize = choirSize;
+     }
+ }
