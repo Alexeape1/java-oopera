@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class Show {
-    public String title;
-    public int duration;
-    public Director director;
-    public ArrayList<Actor> listOfActors;
+    protected String title;
+    protected int duration;
+    protected Director director;
+    private final ArrayList<Actor> listOfActors;
 
     public Show(String title, int duration, Director director) {
         this.title = title;
@@ -33,7 +33,7 @@ public class Show {
         boolean actorFound = false;
         for (int i = 0; i < listOfActors.size(); i++) {
             Actor currentActor = listOfActors.get(i);
-            if (currentActor.surname.equals(surNameToChange)) {
+            if (currentActor.getSurname().equals(surNameToChange)) {
                 listOfActors.set(i, newActor);
                 actorFound = true;
                 break;

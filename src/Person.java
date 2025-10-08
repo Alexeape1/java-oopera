@@ -1,11 +1,18 @@
 public class Person {
-    public String name;
-    public String surname;
+    private final String name;
+    private final  String surname;
     protected Gender gender;
 
-    Person(String name, String surname, Gender gender) {
+   public Person(String name, String surname, Gender gender) {
         this.name = name;
         this.surname = surname;
         this.gender = gender;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
     }
 }
